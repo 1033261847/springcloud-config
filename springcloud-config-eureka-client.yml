@@ -38,5 +38,4 @@ eureka:
     register-with-eureka: false
     fetch-registry: false	
     service-url:
-      defaultZone: http://www.zx7001.com:7001/eureka/
-	   	 	  
+      defaultZone: http://www.zx7001.com:7001/eureka/ 
