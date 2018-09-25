@@ -3,7 +3,6 @@
     active:
     - dev
 
-
 ---
 
 server:
@@ -40,6 +39,3 @@ eureka:
     fetch-registry: false	
     service-url:
       defaultZone: http://www.zx7001.com:7001/eureka/	   	 	  
-
-
-
