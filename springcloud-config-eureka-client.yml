@@ -20,11 +20,11 @@ eureka:
     register-with-eureka: false
     fetch-registry: false	
     service-url:
-      defaultZone: http://www.zx7001.com/eureka/
+      defaultZone: http://www.zx7001.com:7001/eureka/
 
 ---
 server:
-  port: 7001 #注册中心占用7001端口
+  port: 7002 #注册中心占用7002端口
 
 spring:
   profiles: test
@@ -33,9 +33,9 @@ spring:
 
 eureka:
   instance:
-    hostname: www.zx7001.com
+    hostname: www.zx7002.com
   client:
     register-with-eureka: false
     fetch-registry: false	
     service-url:
-      defaultZone: http://www.zx7001.com/eureka/ 
+      defaultZone: http://www.zx7002.com:7002/eureka/ 
