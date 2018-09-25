@@ -1,40 +1,40 @@
-﻿spring:
-  profiles:
-    active:
-    - dev
+﻿spring: 
+  profiles: 
+    active: 
+	 - dev
 
 ---
 
-server:
+server: 
   port: 7001 #注册中心占用7001端口
 
-spring:
+spring: 
   profiles: dev
-  application: 
+  application:  
     name: springcloud-config-eureka-client
 
-eureka:
-  instance:
+eureka: 
+  instance: 
     hostname: www.zx7001.com
-  client:
+  client: 
     register-with-eureka: false
     fetch-registry: false	
-    service-url:
+    service-url: 
       defaultZone: http://www.zx7001.com:7001/eureka/
 
 ---
-server:
+server: 
   port: 7002 #注册中心占用7002端口
 
-spring:
+spring: 
   profiles: test
   application: 
     name: springcloud-config-eureka-client
 
-eureka:
-  instance:
+eureka: 
+  instance: 
     hostname: www.zx7002.com
-  client:
+  client: 
     register-with-eureka: false
     fetch-registry: false	
     service-url:
