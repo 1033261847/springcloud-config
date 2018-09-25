@@ -10,8 +10,8 @@ server:
 
 spring:
   profiles: dev
-    application: 
-      name: springcloud-config-eureka-client
+  application: 
+    name: springcloud-config-eureka-client
 
 eureka:
   instance:
@@ -28,8 +28,8 @@ server:
 
 spring:
   profiles: test
-    application: 
-      name: springcloud-config-eureka-client
+  application: 
+    name: springcloud-config-eureka-client
 
 eureka:
   instance:
